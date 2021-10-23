@@ -1,6 +1,8 @@
 extends KinematicBody2D
 class_name Actor
 
+var actor  = "Selam"
+
 const FLOOR_NORMAL = Vector2.UP
 
 var velocity:Vector2 = Vector2.ZERO
