@@ -1,17 +1,13 @@
 extends KinematicBody2D
 class_name Actor
 
-var actor  = "Selam"
-
-const FLOOR_NORMAL = Vector2.UP
-
-var velocity:Vector2 = Vector2.ZERO
+const FLOOR_NORMAL := Vector2.UP
 
 
-export var gravity = 3000.0
-export var max_speed:Vector2 = Vector2(800.0,1000.0)
+export var gravity := 4500.0
+export var speed := 600.0
+export var jump_strength: = 1500.0
+export var double_jump_strength = 1200.0
 
-
-	
-	
-	
+var jumps_made := 0
+var velocity := Vector2.ZERO
