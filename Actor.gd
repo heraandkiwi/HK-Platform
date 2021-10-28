@@ -11,3 +11,4 @@ export var double_jump_strength = 1200.0
 
 var jumps_made := 0
 var velocity := Vector2.ZERO
+var max_speed := Vector2(1000,1500)

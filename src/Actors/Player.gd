@@ -5,7 +5,8 @@ func _physics_process(delta: float) -> void:
 		Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	)
 	velocity.x = _horizontal_direction * speed
-	velocity.y += gravity*delta
+	if velocity.y < max_speed.y:
+		velocity.y += gravity*delta
 	velocity = move_and_slide(velocity,FLOOR_NORMAL)
 	
 	var _is_jumping := Input.is_action_just_pressed("jump") and is_on_floor()
